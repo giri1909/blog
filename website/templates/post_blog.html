@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>
+Please post your blog.
+</title>
+</head>
+<body bgcolor="pink">
+<center>
+<form role="form" action="" method="post">
+{% csrf_token %}
+{{ form.as_p}}
+<button type="submit">submit</button>
+</form>
+</center>
+</body>
+</html>
+

@@ -1,0 +1,10 @@
+{% extends 'base.html' %} <!-- To load static elements  -->
+{% block  'content' %}    <!-- To load dynamic form -->
+
+<form role="form" action="" method="post">
+{% csrf_token %}
+{{ form.as_ul}}
+<button type="submit">submit</button>
+</form>
+{% endblock %}
+<!-- i dont understand -->

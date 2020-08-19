@@ -8,7 +8,7 @@ from .views import Contact,Thanks
 
 from .views import Thanks,StudentInsert
 
-from .views import BlogPost
+from .views import BlogPost,AboutUs
 from .views import Home
 urlpatterns = [
 
@@ -26,6 +26,7 @@ urlpatterns = [
 	url(r'^studentinsert/',StudentInsert),
     url(r'^postblog/', BlogPost, name='postblog'),
     url(r'^$', Home, name='home'),
+    url(r'^aboutus/',AboutUs, name='aboutus'),
 ]
 
 

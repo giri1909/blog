@@ -47,8 +47,7 @@ def bloggTest(request):
     return render(request,'blogg/test.html',context)
 
 
-def Thanks(request): #<==========added
-    return HttpResponse("Thank you and Have a great day!!!,I will inform you soon")
+
 
 from django.http import HttpResponse,HttpResponseRedirect
 from django.core.mail import EmailMessage
@@ -135,3 +134,12 @@ def Home(request):
     context={}
     return render(request,'home.html',context)
 
+
+def AboutUs(request):
+    context = {}
+    return render(request,'blogg/about_us.html',context)
+
+
+def Thanks(request):
+    #return HttpResponse("Thank you and Have a great day!!!,I will inform you soon")
+    return render(request, 'blogg/thankyou.html', {})

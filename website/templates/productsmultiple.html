@@ -6,7 +6,7 @@
 </head>
 <body bgcolor="lightblue">
 	<center>
-<table border="2" height="100" width="500">
+<table border="2" height="200" width="500">
 	<caption><h3>Books Mela</h3></caption>
 	<thead>
 
@@ -21,7 +21,7 @@
         <td>{{i.pid}}</td>
         <td>{{i.pname | capfirst | cut:" " }}</td>
         <td>{{i.price | add:"100" }}</td>
-        <td>{{i.author}}</td>
+        <td>{{i.author }}</td>
         
         {% if i.price > 500 %}
         <td> 15% Discount</td>
